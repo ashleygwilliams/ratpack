@@ -1,5 +1,6 @@
 body {
   background: url(../img/ratpack.jpg) no-repeat top;
+  padding-top: 10px;
 }
 h1, h2 {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
@@ -19,6 +20,14 @@ h2 {
 }
 
 section {
-  padding: 0 10px;
+  padding: 10px 20px;
+  margin: 20px 0;
   background: rgba(255,255,255,.5);
+}
+li pre {
+  display: inline;
+  padding: 2px;
+}
+.navbar {
+  z-index: -1;
 }
