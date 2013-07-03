@@ -1,5 +1,4 @@
-sinatra-boilerplate
-===================
+#classy
 
 a simple boilerplate for creating production-ready sinatra apps that use activerecord and sqlite
 
