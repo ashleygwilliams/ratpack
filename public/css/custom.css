@@ -2,27 +2,31 @@ body {
   background: url(../img/ratpack.jpg) no-repeat top;
   padding-top: 10px;
 }
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
   line-height: 1em;
-  text-align: right;
 }
 h1 {
   font-weight: 900;
   font-style: italic;
   color: yellow;
   font-size: 200px;
+  text-align: right;
 }
 h2 {
   font-weight: 400;
   font-size: 50px;
   color: white;
+  text-align: right;
+}
+h3 {
+  text-align: left;
 }
 
 section {
   padding: 10px 20px;
   margin: 20px 0;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.6);
 }
 li pre {
   display: inline;
