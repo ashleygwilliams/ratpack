@@ -1,0 +1,15 @@
+h1, h2 {
+  font-family: 'Playfair', Times, serif;
+  line-height: 1em;
+  text-align: center;
+}
+h1 {
+  font-weight: 900;
+  font-style: italic;
+  color: grey;
+  font-size: 200px;
+}
+h2 {
+  font-weight: 900;
+  font-size: 100px;
+}
