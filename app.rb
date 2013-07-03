@@ -9,6 +9,8 @@ end
 module Name
 	class App < Sinatra::Application
 
+		set :database, "sqlite3:///database.db"
+
 		#filters
 
 		#routes
