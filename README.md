@@ -1,6 +1,10 @@
-#classy
+#ratpack
 
 a simple boilerplate for creating production-ready sinatra apps that use activerecord and sqlite
+
+twitterbootstrap using html and css are included.
+
+if ya want haml and sass, be on the look for classy.
 
 ## Up and running
 1. `bundle install`
