@@ -13,7 +13,6 @@ a simple boilerplate for creating production-ready sinatra apps that use activer
 - [activerecord](http://guides.rubyonrails.org/active_record_querying.html): ORM
 - [sinatra-activerecord](https://github.com/bmizerany/sinatra-activerecord)
 - [rake](http://rake.rubyforge.org/)
-
    * ### Development
    * [shotgun](https://github.com/rtomayko/shotgun)
    * [tux](http://tagaholic.me/2011/04/10/tux-a-sinatra-console.html)
