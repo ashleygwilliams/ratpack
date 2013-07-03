@@ -7,15 +7,28 @@ Dir.glob('./lib/*.rb') do |model|
 end
 
 module Name
-	class App < Sinatra::Application
+  class App < Sinatra::Application
 
-		set :database, "sqlite3:///database.db"
+    #configure
+    configure do
+      set :root, File.dirname(__FILE__)
+      set :public_folder, 'public'
+    end
 
-		#filters
+    #database
+    set :database, "sqlite3:///database.db"
 
-		#routes
+    #filters
 
-		#helpers
+    #routes
+    get '/' do
+      erb :index
+    end
 
-	end
+    #helpers
+    def partial(file_name)
+      erb file_name, layout => false
+    end
+
+  end
 end
