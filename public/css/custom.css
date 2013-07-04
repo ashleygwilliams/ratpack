@@ -1,3 +1,6 @@
+body {
+  background: black;
+}
 .background {
   position: fixed;
   width: 100%;
