@@ -15,6 +15,10 @@ body {
   background-size: cover;
   margin: 0 -20px;
 }
+.content {
+  height: 500px;
+  overflow: scroll;
+}
 h1, h2, h3 {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
   line-height: 1em;
