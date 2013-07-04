@@ -1,5 +1,4 @@
 require 'bundler'
-
 Bundler.require
 
 Dir.glob('./lib/*.rb') do |model|

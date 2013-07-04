@@ -1,5 +1,7 @@
 body {
   background: black;
+  font-weight: 400;
+  padding-top: 30px;
 }
 .background {
   position: fixed;
@@ -46,5 +48,8 @@ pre {
   padding: 2px;
 }
 .navbar {
-  z-index: -1;
+  z-index: 0;
+}
+#github {
+  z-index: 2;
 }
