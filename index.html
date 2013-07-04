@@ -58,22 +58,31 @@
               </ul>
           </section>
           <section>
-            <h3>About the App</h3>
+            <h3>App Structure and Organization</h3>
             <ul>
-              <li> 
-                All of your Gemfiles are required in your app using Bundler:
-                <script src="https://gist.github.com/ashleygwilliams/5924575.js"></script>
-              </li>
-              <li>
-                All of your models in the <pre>lib</pre> directory are required in your app using this code:
-                <script src="https://gist.github.com/ashleygwilliams/5924612.js"></script>
-              </li>
               <li>
                 Your app is wrapped in a class called <pre>App</pre> that extends <pre>Sinatra::Application</pre>. It is wrapped in a module that you should name with your project name.
                 <script src="https://gist.github.com/ashleygwilliams/5924622.js"></script>
               </li>
-
-
+              <li>
+                Sinatra runs on Rack! So we have a <pre>config.ru</pre> file. All we need to do in there is require our <pre>app.rb</pre> file and then run it:
+                <script src="https://gist.github.com/ashleygwilliams/5924661.js"></script>
+              </li>
+              <li> 
+                To get this running, we'll need to use the <pre>sinatra</pre> gem. This, and all of your Gemfiles are required in your app using Bundler at the very top of your <pre>app.rb</pre>:
+                <script src="https://gist.github.com/ashleygwilliams/5924575.js"></script>
+              </li>
+              <li>
+                Last, but not least, let's configure a <pre>public</pre> folder for all our static assets (i.e. things that don't need to be compiled or rendered, like pictures and css.) We'll also define a <pre>:root</pre>. This goes inside our <pre>App</pre> class definition in the <pre>app.rb</pre> file.
+                <script src="https://gist.github.com/ashleygwilliams/5924677.js"></script>
+              </li>
+          </section>
+          <section>
+            <h3>The Database!</h3>
+              <li>
+                All of your models in the <pre>lib</pre> directory are required in your app using this code:
+                <script src="https://gist.github.com/ashleygwilliams/5924612.js"></script>
+              </li>
           </section>
         </div>
       </div>
