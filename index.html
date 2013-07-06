@@ -105,7 +105,19 @@
             </ul>
           </section>
            <section id="routes">
-            <h3>Routes, Helpers, and Filters</h3>
+            <h3>Routes, Helpers, and Views</h3>
+            <ul>
+              <li>If you're used to Rails, it's worth noting that Sinatra collapses routes controllers into the same blocks that exist inside our <pre>App</pre> class in <pre>app.rb</pre>. The Pack contains one as an example:
+              <script src="https://gist.github.com/ashleygwilliams/5938467.js"></script>
+              </li>
+              <li>Sinatra allows you to use layouts, and by default will use the <pre>layout.erb</pre> file in the <pre>views</pre> folder. The one the Pack contains is shown below:
+              <script src="https://gist.github.com/ashleygwilliams/5938472.js"></script>
+              Note that whatever view you render will be inserted into the layout where <pre><%= yield %></pre> is.
+              </li>
+              <li>Lastly, Sinatra doesn't come with the ability to support partials out of the box. Therefore, the pack comes with a helper to provide that functionality:
+              <script src="https://gist.github.com/ashleygwilliams/5938476.js"></script>
+              </li>
+            </ul>
           </section>
            <section id="contact">
             <h3>Contact</h3>
