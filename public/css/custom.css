@@ -1,6 +1,7 @@
 body {
   background: black;
   font-weight: 400;
+  padding-top: 40px;
 }
 .background {
   position: fixed;
@@ -26,6 +27,7 @@ h1 {
   font-style: italic;
   color: yellow;
   font-size: 200px;
+  margin-top: -20px;
 }
 h2 {
   font-weight: 400;
