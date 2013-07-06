@@ -2,12 +2,30 @@
 <html>
   <head>
     <title>RatPack - A Sinatra Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="public/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="public/css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link href="public/css/custom.css" type="text/css" rel="stylesheet"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script>
+      $(document).ready( function() {
+        $('.smooth-scroll').click(function(e){
+          var that = this;
+          scrollThere(that, e);
+          return false;
+        });
+
+        function scrollThere(that, e){
+          e.preventDefault();
+          e.stopPropagation();
+          target = that.hash;
+          $.scrollTo(target, 300, {offset:-50});
+        }
+      });
+    </script>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="container-fluid">
@@ -27,13 +45,13 @@
             <div class="nav-collapse collapse">
           <!-- .nav, .navbar-search, .navbar-form, etc -->
             <ul class="nav pull-right">
-              <li class="active"><a href="#upandrunning">Up and Running</a></li>
-              <li><a href="#pack">The Pack</a></li>
-              <li><a href="#gemfile">Gemfile</a></li>
-              <li><a href="#apporg">App Structure and Org</a></li>
-              <li><a href="#database">Database</a></li>
-              <li><a href="#routes">Routes, Helpers, and Views</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#upandrunning" class="smooth-scroll">Up and Running</a></li>
+              <li><a href="#pack" class="smooth-scroll">The Pack</a></li>
+              <li><a href="#gemfile" class="smooth-scroll">Gemfile</a></li>
+              <li><a href="#apporg" class="smooth-scroll">App Structure and Org</a></li>
+              <li><a href="#database" class="smooth-scroll">Database</a></li>
+              <li><a href="#routes" class="smooth-scroll">Routes, Helpers, and Views</a></li>
+              <li><a href="#contact" class="smooth-scroll">Contact</a></li>
               </ul>
             </div>
  
