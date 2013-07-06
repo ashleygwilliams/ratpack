@@ -25,9 +25,11 @@ module Name
     end
 
     #helpers
-    def partial(file_name)
-      erb file_name, layout => false
-    end
+    helpers do
+      def partial(file_name)
+        erb file_name, layout => false
+      end
+    do
 
   end
 end
