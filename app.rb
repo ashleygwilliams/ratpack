@@ -27,7 +27,7 @@ module Name
     #helpers
     helpers do
       def partial(file_name)
-        erb file_name, layout => false
+        erb file_name, :layout => false
       end
     end
 
