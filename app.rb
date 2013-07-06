@@ -29,7 +29,7 @@ module Name
       def partial(file_name)
         erb file_name, layout => false
       end
-    do
+    end
 
   end
 end
