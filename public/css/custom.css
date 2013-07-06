@@ -54,5 +54,8 @@ pre {
   z-index: 0;
 }
 #github {
+  position: fixed;
+  top:0;
+  border: 0;
   z-index: 2;
 }
